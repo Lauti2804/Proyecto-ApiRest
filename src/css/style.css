@@ -1,0 +1,164 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    padding:0;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+        width: 80rem;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* HEADER */
+.header{
+    width: 100%;
+}
+.header__container{
+    display: flex;
+    text-align: center;
+    margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.header__title{
+    font-size: 4rem;
+    font-family: inherit;
+}
+
+
+.header__nav{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    font-size: 2rem;
+    color: black;
+    margin-top: 4rem;
+
+}
+.header__nav-link{
+    font-weight: bold;
+    color: grey;
+}
+
+
+.header__cat{
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: yellow;
+    font-family: fangsong;
+}
+.header__cat span{
+    color: grey;
+}
+
+
+/* main */
+
+.main{
+    width: 100%;
+    text-align: center; 
+}
+
+
+.main__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   
+}
+
+.main__card{
+    display: flex;
+    flex-direction: column;
+}
+.main__card--img{
+    width: 30rem;
+    height: 30rem;
+    border-radius: 3rem;
+    border: 1px solid;
+}   
+.main__card--button{
+    background: none;
+    border: none;
+    position: relative;
+    width: 2rem;
+    left: 238px;
+    bottom: 59px;
+}
+.main__card--button:hover{
+    cursor: pointer;
+}
+
+.main__button--random{
+    background: yellow;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 12px;
+    color: white;
+    font-size: 2.4rem;
+}
+
+.favorite__seccion{
+    width: 80rem;
+    margin:0 auto;
+    border-radius: 2rem;
+    background-color: slateblue;
+    padding: 4rem
+}
+
+.favorite__seccion img{
+    width: 30rem;
+    height: 30rem;
+    border-radius: 2rem;
+
+}
+
+.favorite__seccion button{
+    width: 3rem;
+    background: none;
+    border: none;
+    position: relative;
+    bottom: 35px;
+    left: 251px;
+}
+.favorite__seccion section{
+    display: flex;
+    flex-direction: column;
+}
+
+.favorite__container{
+
+    gap: 2rem;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    
+}
+
+.favorite__title{
+    align-items: center;
+        text-align: center;
+        font-size: 4rem;
+        color: grey;
+        background: yellow;
+        width: 60rem;
+        margin: 4rem auto;
+        border-radius: 2rem;
+        border: 1px solid grey;
+}

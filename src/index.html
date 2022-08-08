@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatitos Aleateorios</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>  
+
+    <header class="header">
+        <div class="header__container">
+            <img class="header__imagen" src="https://devnielote.github.io/elgato-api-rest/assets/cat-icon.png" alt="Logo_cat">
+            <h2 class="header__title">El Michi!</h1>
+        </div>
+        <nav class="header__nav">
+            <a class="header__nav-link" href="https://docs.thecatapi.com/">About API</a>
+            <a class="header__nav-link" href="#">Contact</a>
+        </nav>
+
+        <h1 class="header__cat">cat <span>generantis</span> </h1>
+    </header>
+    <section class="main"> 
+        <div class="main__container">
+            <div class="main__card">
+                <img class="main__card--img" id="img1"  alt="">
+                <button class="main__card--button" id="btnfavorite1"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="44" height="44" viewBox="0 0 24 24" stroke-width="3" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                  </svg></button>
+            </div>
+
+            <div class="main__card">
+                <img class="main__card--img" id="img2"  alt="">
+                <button class="main__card--button" id="btnfavorite2"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="44" height="44" viewBox="0 0 24 24" stroke-width="3" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                  </svg></button>
+            </div>
+        </div>
+        <button class="main__button--random" id="btnAleatorio"> Gatitos nuevos</button>
+    </section>
+<!--     
+    <section id="subirFotoMichi">
+        <h2 >Sube foto de tu michi</h2>
+
+        <form id="michiForm" action="">
+            <input id="file" type="file" name="file" >
+            <button type="button" onclick="uptoloadPhoto()" >Subir foto</button>
+        </form>
+    </section> -->
+
+
+    <section class="favorite__seccion" >
+        <h2 class="favorite__title">Michis favoritos</h2>
+        <div class="favorite__container" id="michisFavorito">
+
+        </div>
+    </section>
+    <script src="./assets/main.js"></script>
+</body>
+</html>
